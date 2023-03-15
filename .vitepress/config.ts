@@ -8,7 +8,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
+      // { text: 'Examples', link: '/markdown-examples' },
       { text: '人口', link: '/人口/人口年龄结构和抚养比.md' },
       { text: '价格', link: '/价格/近100年居民消费价格分类指数-2015.md' },
     ],
