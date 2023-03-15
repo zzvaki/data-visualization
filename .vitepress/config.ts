@@ -2,6 +2,10 @@ import { defineConfig } from 'vitepress';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    // Vite config options
+    base: '/data-visualization/'
+  },
   title: '数据可视化',
   description: 'A VitePress Site',
   themeConfig: {
