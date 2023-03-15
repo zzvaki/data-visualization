@@ -9,7 +9,7 @@ import * as echarts from 'echarts';
 
 const $chart1 = ref(null);
 onMounted(() => {
-  console.log('dataJson', dataJson);
+  // console.log('dataJson', dataJson);
   // console.log(
   //   '年末总人口',
   //   dataJson.returndata.datanodes

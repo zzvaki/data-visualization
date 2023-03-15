@@ -9,13 +9,6 @@ import * as echarts from 'echarts';
 
 const $chart1 = ref(null);
 onMounted(() => {
-  console.log('dataJson', dataJson);
-  console.log(
-    '年末总人口',
-    dataJson.returndata.datanodes
-      .filter((item) => item.wds[0].valuecode === 'A030301')
-      .map((item) => item.data.data)
-  );
   // console.log(" $chart1", $chart1.value)
   // 基于准备好的dom，初始化echarts实例
   const myChart = echarts.init($chart1.value);
