@@ -42,7 +42,6 @@ onMounted(() => {
         name: '总抚养比',
         // A030305
         type: 'line',
-        stack: 'Total',
         // data: [120, 132, 101, 134, 90, 230, 210],
         data: dataJson.returndata.datanodes
           .filter((item) => item.wds[0].valuecode === 'A030305')
@@ -53,7 +52,6 @@ onMounted(() => {
         name: '少儿抚养比',
         // A030306
         type: 'line',
-        stack: 'Total',
         // data: [120, 132, 101, 134, 90, 230, 210],
         data: dataJson.returndata.datanodes
           .filter((item) => item.wds[0].valuecode === 'A030306')
@@ -64,7 +62,6 @@ onMounted(() => {
         name: '老年抚养比',
         // A030307
         type: 'line',
-        stack: 'Total',
         // data: [120, 132, 101, 134, 90, 230, 210],
         data: dataJson.returndata.datanodes
           .filter((item) => item.wds[0].valuecode === 'A030307')

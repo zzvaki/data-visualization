@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import dataJson from './Chart3Data.json';
+import dataJson from './Chart1Data.json';
 import { ref, onMounted } from 'vue';
 import * as echarts from 'echarts';
 
@@ -17,7 +17,7 @@ onMounted(() => {
     tooltip: {
       trigger: 'axis',
     },
-    color: [ '#00DDFF', '#37A2FF', '#FF0087', '#FFBF00'],
+    color: ['#00DDFF', '#37A2FF', '#FF0087', '#FFBF00'],
     // legend: {
     //   data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine'],
     // },
@@ -33,19 +33,34 @@ onMounted(() => {
       boundaryGap: false,
       // data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
       data: dataJson.returndata.wdnodes[1].nodes
+        .filter((item) => item.code <= 2015)
         .map((item) => item.name)
         .reverse(),
     },
     yAxis: {
       type: 'value',
     },
+    dataZoom: [
+      {
+        type: 'inside',
+        start: 0,
+        end: 10,
+      },
+      {
+        start: 0,
+        end: 10,
+      },
+    ],
     series: dataJson.returndata.wdnodes[0].nodes.map((nodeItem) => ({
       name: nodeItem.name,
       type: 'line',
       data: dataJson.returndata.datanodes
         .filter((item) => item.wds[0].valuecode === nodeItem.code)
         // .filter((item) => item.wds[0].valuecode === 'A030201')
-        .map((item) => item.data.data)
+        .map(
+          (item) =>
+            (item.data.data && Number(item.data.data - 100).toFixed(1)) || ''
+        )
         .reverse(),
     })),
   };
