@@ -5,14 +5,14 @@ layout: home
 hero:
   name: "数据可视化"
   text: "基于国家统计局提供的数据"
-  tagline: My great project tagline
+  # tagline: My great project tagline
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 近100年人口出生率、死亡率和自然增长率
+      link: /人口/人口出生率、死亡率和自然增长率
+  #   - theme: alt
+  #     text: API Examples
+  #     link: /api-examples
 
 # features:
 #   - title: Feature A
