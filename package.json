@@ -3,8 +3,12 @@
     "vitepress": "1.0.0-alpha.59"
   },
   "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "dependencies": {
+    "echarts": "^5.4.1",
+    "less": "^4.1.3"
   }
 }

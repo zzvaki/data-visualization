@@ -1,19 +1,29 @@
 {
-  "hash": "e08753b4",
-  "browserHash": "d921cff4",
+  "hash": "2ddca712",
+  "browserHash": "5533b512",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/.pnpm/vue@3.2.47/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "50c418d3",
+      "fileHash": "1ecb1891",
       "needsInterop": false
     },
     "@theme/index": {
-      "src": "../../../node_modules/.pnpm/vitepress@1.0.0-alpha.59/node_modules/vitepress/dist/client/theme-default/index.js",
+      "src": "../../../node_modules/.pnpm/vitepress@1.0.0-alpha.59_less@4.1.3/node_modules/vitepress/dist/client/theme-default/index.js",
       "file": "@theme_index.js",
-      "fileHash": "36e67cda",
+      "fileHash": "924c35ca",
+      "needsInterop": false
+    },
+    "echarts": {
+      "src": "../../../node_modules/.pnpm/echarts@5.4.1/node_modules/echarts/index.js",
+      "file": "echarts.js",
+      "fileHash": "e1ea5aff",
       "needsInterop": false
     }
   },
-  "chunks": {}
+  "chunks": {
+    "chunk-JC4IRQUL": {
+      "file": "chunk-JC4IRQUL.js"
+    }
+  }
 }
