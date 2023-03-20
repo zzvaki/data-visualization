@@ -13,6 +13,7 @@ export default defineConfig({
       // { text: 'Examples', link: '/markdown-examples' },
       { text: '人口', link: '/人口/人口年龄结构和抚养比.md' },
       { text: '价格', link: '/价格/近100年居民消费价格分类指数-2015.md' },
+      { text: '房地产', link: '/房地产/房地产开发投资情况.md' },
     ],
 
     sidebar: {
@@ -39,6 +40,12 @@ export default defineConfig({
         {
           text: '近100年居民消费价格分类指数-2015',
           link: '/价格/近100年居民消费价格分类指数-2015.md',
+        },
+      ],
+      '/房地产/': [
+        {
+          text: '房地产开发投资情况',
+          link: '/房地产/房地产开发投资情况.md',
         },
       ],
     },
