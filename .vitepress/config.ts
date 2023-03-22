@@ -14,6 +14,7 @@ export default defineConfig({
       { text: '人口', link: '/人口/人口年龄结构和抚养比.md' },
       { text: '价格', link: '/价格/近100年居民消费价格分类指数-2015.md' },
       { text: '房地产', link: '/房地产/房地产开发投资情况.md' },
+      { text: '自定义', link: '/自定义/' },
     ],
 
     sidebar: {
@@ -48,10 +49,11 @@ export default defineConfig({
           link: '/房地产/房地产开发投资情况.md',
         },
       ],
+      '/自定义/': [],
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/zzvaki/data-visualization' }
-    ]
+      { icon: 'github', link: 'https://github.com/zzvaki/data-visualization' },
+    ],
   },
 });
